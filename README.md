@@ -3,7 +3,8 @@ Some of PHP and Magento cli tools
 # PHP
 
 ## PHP Code Sniffer
-curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar	Get PHP Code Sniffer	Preparation
+curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
+
 ### Examples
 - `php phpcs.phar -s --standard=Zend app/code/community`
 - `php phpcs.phar -s --sniffs=Zend.NamingConventions.ValidVariableName --standard=Zend app/code/community`
@@ -17,6 +18,8 @@ chmod +x phpcpd.phar
 ## PHP Metrics
 curl https://github.com/phpmetrics/PhpMetrics/releases/download/v2.1.0/phpmetrics.phar
 chmod +x phpmetrics.phar
+### Examples
+- `php phpmetrics.phar --report-html=myreport.html /path/of/your/sources`
 
 ## PHP Mess Detector
 wget -c http://static.phpmd.org/php/latest/phpmd.phar
@@ -40,5 +43,4 @@ chmod +x ./n98-magerun.phar
 - `php n98-magerun.phar admin:user:create [username] [email] [password] John Smith Administrators`
 
 ## Magescan (cli)
-Download latest from
-https://github.com/steverobbins/magescan/releases
+Download latest from https://github.com/steverobbins/magescan/releases
