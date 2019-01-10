@@ -28,14 +28,16 @@ wget -c http://static.phpmd.org/php/latest/phpmd.phar
 wget https://phar.phpunit.de/phploc.phar
 chmod +x phploc.phar
 
-## Other tools
-wget https://phar.phpunit.de/phploc.phar
-chmod +x phploc.phar
-
 # Magento Specific
 ## Magerun
+### Magento 1
 wget https://files.magerun.net/n98-magerun.phar
 chmod +x ./n98-magerun.phar
+### Magento 2
+wget wget https://files.magerun.net/n98-magerun2.phar
+chmod +x ./n98-magerun2.phar
+### Notes
+Commands differ between Magento 1 and Magento 2 magerun versions. Try running php `n98-magerun.phar` / `php n98-magerun2.phar` to see available commands.
 ### Examples
 - `php n98-magerun.phar sys:info`
 - `php n98-magerun.phar config:get dev/css/merge_css_files`
